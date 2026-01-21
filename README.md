@@ -27,22 +27,23 @@ Because vstring uses a flexible array member, the total size of the struct is no
 
 API Reference<br />
 Initialization & Cleanup<br />
-Function	Description<br />
-vstring_construct(vs, n)	Allocates a new vstring with capacity n.<br />
-vstring_free(vs)	Frees the allocated memory and sets the pointer to NULL.<br />
-vstring_resize(vs, n)	Manually changes the capacity of the vstring.<br />
+Function	                    Description<br />
+vstring_construct(vs, n)	    Allocates a new vstring with capacity n.<br />
+vstring_free(vs)	            Frees the allocated memory and sets the pointer to NULL.<br />
+vstring_resize(vs, n)	        Manually changes the capacity of the vstring.<br />
+
 String Operations<br />
-Function	Description<br />
+Function	                    Description<br />
 vstring_store_string(vs, char*)	Imports a standard C-string into a vstring.<br />
-vstring_copy(dest, src)	Copies src to dest. Reallocates dest if it is too small.<br />
-vstring_cat(dest, src)	Appends src to the end of dest.<br />
-vstring_append_char(vs, c)	Appends a single character to the vstring.<br />
-vstring_make_empty(vs)	Resets len to 0 without freeing memory.<br />
+vstring_copy(dest, src)	        Copies src to dest. Reallocates dest if it is too small.<br />
+vstring_cat(dest, src)	        Appends src to the end of dest.<br />
+vstring_append_char(vs, c)	    Appends a single character to the vstring.<br />
+vstring_make_empty(vs)	        Resets len to 0 without freeing memory.<br />
 Comparison & Output<br />
-Function	Description<br />
-vstring_cmp(v1, v2)	Lexicographical comparison (returns negative, zero, or positive).<br />
-vstring_print(vs)	Prints the string to stdout.<br />
-vstring_println(vs)	Prints the string followed by a newline.<br />
+Function	                    Description<br />
+vstring_cmp(v1, v2)	            Lexicographical comparison (returns negative, zero, or positive).<br />
+vstring_print(vs)	            Prints the string to stdout.<br />
+vstring_println(vs)	            Prints the string followed by a newline.<br />
 Example Usage<br />
 C
 
