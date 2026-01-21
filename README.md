@@ -24,7 +24,7 @@ Because vstring uses a flexible array member, the total size of the struct is no
     str[]: The actual character data and is not null terminated (may add null terminated character ability in future for better backwar compatibility).
 
     Note: Since vstring is an incomplete type (variable size), you cannot declare an array of vstring objects directly. Instead, use an array of pointers: vstring *my_strings[10];.
-
+<pre>
 API Reference<br />
 Initialization & Cleanup<br />
 Function	                    Description<br />
@@ -44,6 +44,7 @@ Function	                    Description<br />
 vstring_cmp(v1, v2)	            Lexicographical comparison (returns negative, zero, or positive).<br />
 vstring_print(vs)	            Prints the string to stdout.<br />
 vstring_println(vs)	            Prints the string followed by a newline.<br />
+</pre>
 Example Usage<br />
 C
 
