@@ -21,7 +21,7 @@ Because vstring uses a flexible array member, the total size of the struct is no
 
     len: The current number of characters stored.
 
-    str[]: The actual character data (not strictly required to be null-terminated, though functions may add one for compatibility).
+    str[]: The actual character data and is not null terminated (may add null terminated character ability in future for better backwar compatibility).
 
     Note: Since vstring is an incomplete type (variable size), you cannot declare an array of vstring objects directly. Instead, use an array of pointers: vstring *my_strings[10];.
 
