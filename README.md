@@ -51,27 +51,29 @@ C
 #include "vstring.h"
 #include <stdio.h>
 
-int main() {
-    vstring *my_str = NULL;
+    int main() 
+    {
+       vstring *my_str = NULL;
 
-    // Allocate space for 20 characters
-    if (vstring_construct(&my_str, 20)) {
-        
-        // Store a string
-        vstring_store_string(&my_str, "Hello");
-        
-        // Append a character
-        vstring_append_char(&my_str, '!');
-        
-        // Print it
-        vstring_println(my_str); // Output: Hello!
-        
-        // Cleanup
-        vstring_free(&my_str);
+        // Allocate space for 20 characters
+        if (vstring_construct(&my_str, 20)) 
+        {
+            
+            // Store a string
+            vstring_store_string(&my_str, "Hello");
+            
+            // Append a character
+            vstring_append_char(&my_str, '!');
+            
+            // Print it
+            vstring_println(my_str); // Output: Hello!
+            
+            // Cleanup
+            vstring_free(&my_str);
+        }
+
+        return 0;
     }
-
-    return 0;
-}
 
 Compilation
 
