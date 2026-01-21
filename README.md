@@ -48,8 +48,8 @@ vstring_println(vs)	            Prints the string followed by a newline.<br />
 Example Usage<br />
 C
 
-#include "vstring.h"
-#include <stdio.h>
+    #include "vstring.h"
+    #include <stdio.h>
 
     int main() 
     {
